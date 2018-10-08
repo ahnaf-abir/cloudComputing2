@@ -1,0 +1,15 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /(.+\.php)$
+  script: \1
+
+- url: /first
+  script: first.php
+
+- url: /second
+  script: second.php  
