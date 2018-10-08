@@ -1,7 +1,7 @@
 <div id="nav">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="index.php">
-                  <img src="images.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+                  <img src="images/image.png" width="30" height="30" class="d-inline-block align-top" alt="">
                   Weather Today
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">

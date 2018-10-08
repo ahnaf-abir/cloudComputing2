@@ -17,6 +17,8 @@ body{
 #nav{
   padding:40px;
 }
-
+tr, td{
+  padding:2px;
+}
 
  .error {color: #FF0000;}

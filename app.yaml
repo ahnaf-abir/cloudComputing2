@@ -5,6 +5,9 @@ handlers:
 - url: /css
   static_dir: css
 
+- url: /images
+  static_dir: images
+
 - url: /(.+\.php)$
   script: \1
 
