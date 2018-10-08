@@ -8,8 +8,8 @@ handlers:
 - url: /(.+\.php)$
   script: \1
 
-- url: /first
-  script: first.php
+- url: /
+  script: index.php
 
 - url: /second
-  script: second.php  
+  script: second.php
