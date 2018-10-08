@@ -12,7 +12,7 @@ body{
   background-color:lightblue;
   margin: 20px;
   border: solid black 2px;
-  box-shadow: 11px 16px #888888;
+  box-shadow: 6px 7px 16px 16px #888888;
 }
 #nav{
   padding:40px;
@@ -22,3 +22,8 @@ tr, td{
 }
 
  .error {color: #FF0000;}
+
+ th{
+   padding:20px;
+   border:solid black 2px;
+ }

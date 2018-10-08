@@ -13,6 +13,3 @@ handlers:
 
 - url: /
   script: index.php
-
-- url: /second
-  script: second.php
