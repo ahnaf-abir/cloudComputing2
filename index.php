@@ -35,7 +35,7 @@
 
           <h5>Type the name of state to search for weather</h5>
           <p></p>
-          <input type="text" class="form-control" id="city" name="city" aria-describedby="city" placeholder="E.g Victoria, Queensland" required>
+          <input type="text" class="form-control" id="city" name="city" aria-describedby="city" placeholder="E.g VIC, SA, NSW, QLD, NT, WA, TAS" required>
           <span class="validity"></span>
           <div class="fallbackDatePicker">
                 <div>

@@ -1,3 +1,22 @@
+<?php
+   include("config.php");
+   session_start();
+   
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // first name, user id, password and email sent from registration form 
+      
+      $myfname = mysqli_real_escape_string($db,$_POST['fName']);
+	  $myuserid = mysqli_real_escape_string($db,$_POST['userId']);
+      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+	  $myemail = mysqli_real_escape_string($db,$_POST['email']);
+      
+      $sql = "INSERT INTO userInfo VALUES ('$myfname', '$myuserid', '$mypassword', '$myemail')";
+      if (!mysqli_query($db,$sql)) {
+		die('Error: ' . mysqli_error($db));
+		}
+		echo "User: ".$myfname." added";
+   }
+?>
 <!DOCTYPE HTML>  
 <html> 
   <head>
