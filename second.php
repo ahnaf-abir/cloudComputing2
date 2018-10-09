@@ -37,7 +37,7 @@
 		$month = htmlspecialchars($_GET['month']);
 		$year = htmlspecialchars($_GET['year']);
 
-		$request->setQuery("SELECT state, stn, year, mo, da, max, min 
+		$request->setQuery("SELECT state, year, mo as month, da as date, max as maxTemperature, min as minTemperature, visib as visibility, wdsp as windspeed, prcp as rainpercent
 				FROM [bigquery-public-data:noaa_gsod.gsod2018] AS st LEFT OUTER JOIN [s3615907-cc2018:weather.Stations] AS bigtable ON stn=usaf
 				where state ='$city' and year ='$year'and mo='0$month' and da='$date'");
 		
