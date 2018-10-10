@@ -30,7 +30,7 @@
                 <area shape="poly" coords="439,508,462,513,486,509,479,537,457,552,446,540" alt="Tasmania" href="https://en.wikipedia.org/wiki/Tasmania">
                 </map>
 
-          <form method="get"  action="second.php?city=<?php echo $_GET['city']?>+year=<?php echo $_GET['year']?>+mo=<?php echo $_GET['mo']?>+date=<?php echo $_GET['date']?>">
+          <form method="get"  action="second.php?city=<?php echo $_GET['city']?>+year=<?php echo $_GET['year']?>+mo=<?php echo $_GET['month']?>+date=<?php echo $_GET['date']?>">
          <br></br>
 
           <h5>Type the name of state to search for weather</h5>
@@ -42,15 +42,15 @@
                    <span>
                     <label for="date">Date:</label>
                     <select id="date" name="date">
-                      <option selected>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>7</option>
-                      <option>8</option>
-                      <option>9</option>
+                      <option selected>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
                       <option>10</option>
                       <option>11</option>
                       <option>12</option>
@@ -78,15 +78,15 @@
                   <span>
                     <label for="month">Month:</label>
                     <select id="month" name="month">
-                       <option selected>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>7</option>
-                      <option>8</option>
-                      <option>9</option>
+                       <option selected>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
                       <option>10</option>
                       <option>11</option>
                       <option>12</option>

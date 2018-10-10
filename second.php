@@ -38,8 +38,8 @@
 		$year = htmlspecialchars($_GET['year']);
 
 		$request->setQuery("SELECT state, year, mo as month, da as date, max as maxTemperature, min as minTemperature, visib as visibility, wdsp as windspeed, prcp as rainpercent
-				FROM [bigquery-public-data:noaa_gsod.gsod2018] AS st LEFT OUTER JOIN [s3615907-cc2018:weather.Stations] AS bigtable ON stn=usaf
-				where state ='$city' and year ='$year'and mo='0$month' and da='$date'");
+				FROM [bigquery-public-data:noaa_gsod.gsod2018] AS st LEFT OUTER JOIN [project-1558:userInformation.stations] AS bigtable ON stn=usaf
+				where state =UPPER('$city') and year ='$year'and mo='$month' and da='$date'");
 		
 		$response = $bigquery->jobs->query($projectId, $request);
 		$rows = $response->getRows();
@@ -47,12 +47,14 @@
 		$str = "<table>".
 		"<tr>" .
 		"<th>State Name</th>" .
-		"<th>Station</th>" .
 		"<th>Year</th>" .
 		"<th>Month</th>" .
 		"<th>Date</th>" .
-		"<th>Max</th>" .
-		"<th>Min</th>" .
+		"<th>Max Temp(F)</th>" .
+		"<th>Min Temp(F)</th>" .
+		"<th>Visibility</th>" .
+		"<th>Wind Speed</th>" .
+		"<th>Rain %</th>" .
 		"</tr>";
 		
 		foreach ($rows as $row)
