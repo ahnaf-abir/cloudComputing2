@@ -16,9 +16,13 @@
 		
       if($count == 1) {
          $_SESSION['login_userId'] = $myuserid;
-         echo "user ".$myuserid." logined.";
+         echo "user ".$myuserid." logged-in.";
 		 header("Location: index.php");
 	  }
+	  else
+	  {
+		  echo "user ".$myuserid." failed to log in.";
+	  }  
    }
 ?>
 <!DOCTYPE HTML>  
