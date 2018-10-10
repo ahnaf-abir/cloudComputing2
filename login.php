@@ -8,22 +8,17 @@
       $myuserid = mysqli_real_escape_string($db,$_POST['userId']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
       
-      $sql = "SELECT userId FROM userInfo WHERE userId = 'andyhhr' and password = '123456'";
+      $sql = "SELECT userId FROM userInfo WHERE userId = '$myuserid' and password = '$mypassword'";
       $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      
       $count = mysqli_num_rows($result);
       
-      // If result matched $myusername and $mypassword, table row must be 1 row
+      // If result matched $myuserid and $mypassword, table row must be 1 row
 		
       if($count == 1) {
-         session_register("myuserId");
          $_SESSION['login_userId'] = $myuserid;
-         
-         header("location: welcome.php");
-      }else {
-         $error = "Your Login user ID or Password is invalid";
-      }
+         echo "user ".$myuserid." logined.";
+		 header("location: index.php");
+	  }
    }
 ?>
 <!DOCTYPE HTML>  

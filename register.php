@@ -52,7 +52,7 @@
            
            <tr>
                <td>Password: </td>
-               <td><input type = "text" name = "password" required>
+               <td><input type = "text" name = "password" hidden required>
                </td>
             </tr>
            
@@ -64,7 +64,7 @@
              
             <tr>
                <td>Agree</td>
-               <td><input type = "checkbox" name = "checked" value = "1"></td>
+               <td><input type = "checkbox" name = "checked" value = "1" required></td>
                <?php if(!isset($_POST['checked'])){ ?>
                <span class = "error">* <?php echo "You must agree to terms";?></span>
                <?php } ?> 
