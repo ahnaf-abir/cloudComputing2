@@ -1,6 +1,8 @@
 <?php 
+	include("config.php");
 	session_start();
 	require_once 'php/google-api-php-client/vendor/autoload.php';
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -71,11 +73,16 @@
 		$str .= '</table></div>';
 
 		echo $str;
-
+		$userid = $_SESSION['login_userId'];
 	 	$handle = fopen('gs://project-1558.appspot.com/cloud_assign2/searches'.date("Y-m-d h:i:sa").'.txt','w');
 
-	 	fwrite($handle, "User searched at ".date("Y-m-d h:i:sa")." ------ "."City : ".$city.", Date : ".$date.", Month- ".$month.", Year: ".$year);
-
+	 	if(isset($userid)){
+	 	fwrite($handle, $userid." searched at ".date("Y-m-d h:i:sa")." ------ "."City : ".$city.", Date : ".$date.", Month- ".$month.", Year: ".$year);
+	 	echo "\n";
+	 	}else{
+	 		fwrite($handle, "Anonymous"." searched at ".date("Y-m-d h:i:sa")." ------ "."City : ".$city.", Date : ".$date.", Month- ".$month.", Year: ".$year);
+	 	echo "\n";
+	 	}
 		
 
 		fclose($handle);

@@ -23,7 +23,8 @@ tr, td{
 
  .error {color: #FF0000;}
 
- th{
+ th {
    padding:20px;
    border:solid black 2px;
+   text-align: center;
  }

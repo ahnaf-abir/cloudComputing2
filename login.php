@@ -17,7 +17,7 @@
       if($count == 1) {
          $_SESSION['login_userId'] = $myuserid;
          echo "user ".$myuserid." logined.";
-		 header("location: index.php");
+		 header("Location: index.php");
 	  }
    }
 ?>
@@ -47,7 +47,7 @@
            
            <tr>
                <td>Password: </td>
-               <td><input type = "text" name = "password" required>
+               <td><input type = "password" name = "password" required>
                </td>
             </tr>
            

@@ -52,7 +52,7 @@
            
            <tr>
                <td>Password: </td>
-               <td><input type = "text" name = "password" hidden required>
+               <td><input type = "password" name = "password"  required>
                </td>
             </tr>
            
