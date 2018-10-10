@@ -74,7 +74,7 @@
 
 		echo $str;
 		$userid = $_SESSION['login_userId'];
-	 	$handle = fopen('gs://project-1558.appspot.com/cloud_assign2/searches'.date("Y-m-d h:i:sa").'.txt','w');
+	 	$handle = fopen('gs://project-1558.appspot.com/cloud_assign2/searches '.date("Y-m-d h:i:sa").'.txt','w');
 
 	 	if(isset($userid)){
 	 	fwrite($handle, $userid." searched at ".date("Y-m-d h:i:sa")." ------ "."City : ".$city.", Date : ".$date.", Month- ".$month.", Year: ".$year);

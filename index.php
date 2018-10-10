@@ -26,7 +26,7 @@
           height="400" width="400" usemap="#australiamap">
           <map name="australiamap">
                 <area shape="poly" coords="246,341,239,253,409,256,395,453" alt="South Australia" href="https://en.wikipedia.org/wiki/South_Australia">
-                <area shape="poly" coords="238,345,63,412,5,215,106,154,191,48,230,68" alt="Western Australia" href="second?city=westernAustralia+year=2018+mo=03+date=17">
+                <area shape="poly" coords="238,345,63,412,5,215,106,154,191,48,230,68" alt="Western Australia" href="second.php?city=VIC+year=2018+mo=03">
 
                 <area shape="poly" coords="237,249,368,250,372,98,332,70,354,18,262,20,232,71" alt="Northern Terrotory" href="https://en.wikipedia.org/wiki/Northern_Territory">
                 <area shape="poly" coords="368,251,372,101,406,113,447,6,522,166,573,253,582,307,407,305,407,258" alt="Queensland" href="https://en.wikipedia.org/wiki/Queensland">
